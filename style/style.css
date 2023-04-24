@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #e4e4e4;
+  color: #474747;
+  font-size: 1.6rem;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0 0 4%;
+}
+
+.container-input img {
+  width: 60px;
+  height: 60px;
+  margin-right: 2%;
+}
+
+.container-input .input {
+  width: 60vw;
+  height: 100vh;
+}
+
+.container-input .input p {
+  font-size: 1.2rem;
+  margin-left: 5%;
+}
+
+#input-texto {
+  width: 30vw;
+  height: 60vh;
+  font-size: 2rem;
+  color: #474747;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: 0;
+  margin-top: 6%;
+  margin-left: 3%;
+  padding: 8px;
+  text-transform: lowercase;
+}
+
+#output {
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 40vw;
+  height: 95vh;
+  left: 1000px;
+  top: 40px;
+  margin-right: 6%;
+}
+
+#output img {
+  width: auto;
+  height: auto;
+  margin-top: 20%;
+  padding-left: 13%;
+  padding-right: 10%;
+}
+
+#output h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #0a3871;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 3vh;
+}
+
+#output span {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container-btn button {
+  border: 1px solid #000d18;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ececec;
+  background: #0a3871;
+  width: 150px;
+  height: 50px;
+  margin-top: 4%;
+  margin-right: 4%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.btn-copiar {
+  background: #0a3871;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ececec;
+  width: 150px;
+  height: 50px;
+  margin-left: 33%;
+  margin-top: 14%;
+  cursor: pointer;
+}
+
+.container-btn button:hover {
+  border: 2px;
+  transition: 0.55 all;
+}
+
+.rodape {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 20px;
+  background: #dfdfdf;
+  color: #525252;
+}
+
+.rodape h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.icons ion-icon {
+  width: 18px;
+  height: 18px;
+  color: #525252;
+}
+
+.icons ion-icon:hover {
+  color: #ebebeb;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  .container-input {
+    justify-content: space-around;
+  }
+  #output {
+    width: 30vw;
+  }
+
+  #input-texto {
+    width: 25vw;
+  }
+
+  .container-btn button {
+    width: 90px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .btn-copiar {
+    width: 90px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  .container-input {
+    flex-direction: column;
+    align-items: center;
+  }
+  #output {
+    width: 80vw;
+  }
+  #input-texto {
+    width: 60vw;
+    margin-left: 0%;
+    padding-left: 0;
+  }
+  .container-btn button {
+    width: 90px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .container-input img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #input-texto {
+    width: 70vw;
+    height: 75vh;
+  }
+  .container-btn button {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
